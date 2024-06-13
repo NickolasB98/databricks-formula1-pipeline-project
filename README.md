@@ -120,39 +120,61 @@ The requirements for this project are broken down into six different parts which
 <img width="1037" alt="Dominant Teams Visualization" src="https://github.com/NickolasB98/databricks-formula1-pipeline/assets/157819544/d0c3f2df-1233-4904-b0cb-47815f83e36e">
 
 ## Tasks performed:
-
 • Built a solution architecture for a data engineering solution using Azure Databricks, Azure Data Lake Gen2, Azure Data Factory, and Power BI.
+
 • Created and used Azure Databricks service and the architecture of Databricks within Azure.
+
 • Worked with Databricks notebooks and used Databricks utilities, magic commands, etc.
+
 • Passed parameters between notebooks as well as created notebook workflows.
+
 • Created, configured, and monitored Databricks clusters, cluster pools, and jobs.
+
 • Mounted Azure Storage in Databricks using secrets stored in Azure Key Vault.
+
 • Worked with Databricks Tables, Databricks File System (DBFS), etc.
+
 • Used Delta Lake to implement a solution using Lakehouse architecture.
+
 • Created dashboards to visualize the outputs.
+
 • Connected to the Azure Databricks tables from PowerBI.
 
-### Spark (Only PySpark and SQL)
+### Spark (PySpark and SQL)
 • Spark architecture, Data Sources API, and Dataframe API.
+
 • PySpark - Ingested CSV, simple, and complex JSON files into the data lake as parquet files/ tables.
+
 • PySpark - Transformations such as Filter, Join, Simple Aggregations, GroupBy, Window functions etc.
+
 • PySpark - Created global and temporary views.
+
 • Spark SQL - Created databases, tables, and views.
+
 • Spark SQL - Transformations such as Filter, Join, Simple Aggregations, GroupBy, Window functions etc.
+
 • Spark SQL - Created local and temporary views.
+
 • Implemented full refresh and incremental load patterns using partitions.
 
 ### Delta Lake
 • Performed Read, Write, Update, Delete, and Merge to delta lake using both PySpark as well as SQL.
+
 • History, Time Travel, and Vacuum.
+
 • Converted Parquet files to Delta files.
+
 • Implemented incremental load pattern using delta lake.
 
 ### Azure Data Factory
 • Created pipelines to execute Databricks notebooks.
+
 • Designed robust pipelines to deal with unexpected scenarios such as missing files.
+
 • Created dependencies between activities as well as pipelines.
+
 • Scheduled the pipelines using data factory triggers to execute at regular intervals.
+
 • Monitored the triggers/ pipelines to check for errors/ outputs.
 
 ### Technologies/Tools Used:
