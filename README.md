@@ -67,6 +67,21 @@ ADF is scheduled to run every Sunday at 10 PM and is designed to skip the execut
 **Trigger of the Process Pipeline**
 <img width="879" alt="trigger_pipeline" src="https://github.com/NickolasB98/databricks-formula1-pipeline/assets/157819544/30cb9797-16aa-436a-bddd-40ba51c6cee1">
 
+**Window End Date Parameter**
+A Datetime Parameter is utilized inside the ingestion and transformation notebooks, as well as in the Pipelines and the trigger.
+This means that a date is utilized as the parameter to activate the trigger or not.
+If a file named with this date exists inside the raw container, this means that the file contains data for the race happening in this exact date.
+The trigger will find this file in the raw container, and start the pipelines to ingest, process and transform this date's race data.
+The trigger will not start the pipelines if it does not find a file named as next sunday's date.
+This is how we keep the pipeline running only for the weeks in which an actual race is happening.
+
+**This is the datetime parameter handled as a widget inside the databricks notebooks**
+
+<img width="1122" alt="widgets in notebook" src="https://github.com/NickolasB98/databricks-formula1-pipeline/assets/157819544/42bc1506-f3ab-4877-8f13-32181d04b3d9">
+
+**Here is the same parameter in the ADF pipeline, handled as a trigger execution parameter if a file with this date is found in the raw container**
+<img width="706" alt="parameter for pipeline" src="https://github.com/NickolasB98/databricks-formula1-pipeline/assets/157819544/8ea26b7e-4d19-4952-a21d-0d9c0257b352">
+
 
 ## Azure Resources Used for this Project:
 * Azure Data Lake Storage
