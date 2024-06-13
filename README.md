@@ -179,12 +179,18 @@ The requirements for this project are broken down into six different parts which
 
 ### Technologies/Tools Used:
 • Pyspark
+
 • Spark SQL
+
 • Delta Lake
+
 • Azure Databricks
+
 • Azure Data Factory
+
 • Azure Date Lake Storage Gen2
-• Azure Key Fault
+
+
+• Azure Key Vault
+
 • Power BI (Optional)
-Azure Key Fault
-Power BI
