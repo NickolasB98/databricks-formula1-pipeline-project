@@ -21,6 +21,7 @@ The structure of the database is shown in the following ER Diagram and explained
 
 ### Source Data:
 We are referring to open-source data from the website Ergast Developer API. Data was available from 1950 till 2022.
+
 <img width="493" alt="Screenshot at Jun 13 16-22-59" src="https://github.com/NickolasB98/databricks-formula1-pipeline/assets/157819544/88dadf19-efa8-4302-9e13-70ed7a53d4ac">
 
 ### Execution Overview:
